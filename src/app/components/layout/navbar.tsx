@@ -1,31 +1,36 @@
-import { Container } from "./container";
 import Link from "next/link";
+import { Container } from "./container";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
-  { label: "Devlog", href: "/log" },
-  { label: "About", href: "/about" },
+  { href: "/projects", label: "Projects" },
+  { href: "/log", label: "DevLog" },
+  { href: "/about", label: "About" },
 ];
 
 export function Navbar() {
   return (
-    <header className="border-b border-zinc-200">
-      <Container className="flex h-16 items-center justify-between">
-        <Link href="/" className="font-semibold tracking-tight">
+    <header>
+      <Container className="flex min-h-16 items-center justify-between gap-6 py-4 border-b border-white/10 max-[480px]:flex-col max-[480px]:items-start">
+        <Link
+          href="/"
+          className="text-sm font-medium tracking-tight text-zinc-100 transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-100"
+        >
           Sebastian Rios
         </Link>
 
-        <nav className="flex items-center gap-6 text-sm text-zinc-600">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="transition-colors hover:text-zinc-950"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <nav
+          aria-label="Primary navigation"
+          className="flex items-center gap-6 text-sm text-zinc-300"
+        >
+          <Link href="/projects" className="hover:opacity-50">
+            Projects
+          </Link>
+          <Link href="/log" className="hover:opacity-50">
+            DevLog
+          </Link>
+          <Link href="/about" className="hover:opacity-50">
+            About
+          </Link>
         </nav>
       </Container>
     </header>
