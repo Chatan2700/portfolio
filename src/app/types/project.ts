@@ -26,7 +26,7 @@ export type Project = {
     startedAt?: string;
     completedAt?: string;
     
-    //Detail page Content Test :)
+    //Detail page Content Test ?)
     sections?: ProjectSection[];
     gallery?: ProjectImage[];
 }

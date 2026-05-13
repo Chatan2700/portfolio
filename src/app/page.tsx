@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Section } from "./components/layout/section";
 import { ProjectsSection } from "./components/home/projects-section";
+import { DevLogSection } from "./components/home/devlog-section";
 
 export default function HomePage() {
   return (
@@ -49,6 +50,7 @@ export default function HomePage() {
       </Section>
 
       <ProjectsSection />
+      <DevLogSection />
     </>
   );
 }

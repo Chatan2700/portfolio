@@ -8,7 +8,7 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" aria-labelledby="projects-heading">
-      <Container className="border-b border-white/10 py-12">
+      <Container className=" py-12">
         <div className="mb-6 flex items-center justify-between gap-4">
           <h2
             id="projects-heading"
