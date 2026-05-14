@@ -8,17 +8,17 @@ type PostCardProps = {
 export function PostCard({ post }: PostCardProps) {
   return (
     <article>
-      <time dateTime={post.date} className="text-[11px] text-zinc-500">
+      <time dateTime={post.date} className="text-[11px] text-muted">
         {post.date}
       </time>
 
-      <h2 className="mt-2 text-[15px] font-medium leading-[1.6] text-zinc-100">
+      <h2 className="mt-2 text-[15px] font-medium leading-[1.6] text-primary">
         <Link href={`/log/${post.slug}`} className="hover:underline">
           {post.title}
         </Link>
       </h2>
 
-      <p className="mt-2 text-[13px] leading-[1.6] text-zinc-400">
+      <p className="mt-2 text-[13px] leading-[1.6] text-secondary">
         {post.excerpt}
       </p>
     </article>

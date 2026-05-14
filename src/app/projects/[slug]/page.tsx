@@ -39,24 +39,24 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <main>
-      <Container className=" border-white/10 py-12">
+      <Container className="py-12">
         <article className="max-w-[560px]">
           <Link
             href="/projects"
-            className="text-[12px] text-zinc-500 hover:text-zinc-100"
+            className="text-[12px] text-muted hover:text-primary"
           >
             ← Back to projects
           </Link>
 
-          <p className="mt-8 text-[11px] uppercase tracking-[0.1em] text-zinc-500">
+          <p className="mt-8 text-[11px] uppercase tracking-[0.1em] text-muted">
             {project.status}
           </p>
 
-          <h1 className="mt-4 text-[18px] font-medium leading-[1.6] text-zinc-100">
+          <h1 className="mt-4 text-[18px] font-medium leading-[1.6] text-primary">
             {project.title}
           </h1>
 
-          <p className="mt-4 text-[13px] leading-[1.7] text-zinc-400">
+          <p className="mt-4 text-[13px] leading-[1.7] text-secondary">
             {project.description}
           </p>
 
@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             {project.stack.map((item) => (
               <span
                 key={item}
-                className="rounded-md border border-white/10 px-2 py-1 text-[11px] text-zinc-400"
+                className="rounded-md border border-border-soft px-2 py-1 text-[11px] text-secondary"
               >
                 {item}
               </span>
@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <Link
                 href={project.githubUrl}
                 target="_blank"
-                className="text-zinc-100 hover:underline"
+                className="text-primary hover:underline"
               >
                 GitHub ↗
               </Link>
@@ -85,7 +85,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <Link
                 href={project.liveUrl}
                 target="_blank"
-                className="text-zinc-100 hover:underline"
+                className="text-primary hover:underline"
               >
                 Live site ↗
               </Link>
@@ -95,11 +95,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className="mt-10 space-y-8">
               {project.sections.map((section) => (
                 <section key={section.title}>
-                  <h2 className="text-[11px] uppercase tracking-[0.1em] text-zinc-500">
+                  <h2 className="text-[11px] uppercase tracking-[0.1em] text-muted">
                     {section.title}
                   </h2>
 
-                  <p className="mt-3 text-[13px] leading-[1.7] text-zinc-400">
+                  <p className="mt-3 text-[13px] leading-[1.7] text-secondary">
                     {section.body}
                   </p>
                 </section>

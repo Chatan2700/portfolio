@@ -8,19 +8,19 @@ export default function LogPage() {
   return (
     <main>
       <section aria-labelledby="log-heading">
-        <Container className="border-b border-white/10 py-12">
-          <p className="text-[11px] uppercase tracking-[0.1em] text-zinc-500">
+        <Container className=" border-border-soft py-12">
+          <p className="text-[11px] uppercase tracking-[0.1em] text-muted">
             DevLog
           </p>
 
           <h1
             id="log-heading"
-            className="mt-6 text-[18px] font-medium leading-[1.6] text-zinc-100"
+            className="mt-6 text-[18px] font-medium leading-[1.6] text-primary"
           >
             Development notes
           </h1>
 
-          <p className="mt-3 max-w-[430px] text-[13px] leading-[1.6] text-zinc-400">
+          <p className="mt-3 max-w-[430px] text-[13px] leading-[1.6] text-secondary">
             Notes on projects, debugging, architecture decisions, and what I
             learn while building.
           </p>

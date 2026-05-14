@@ -8,18 +8,18 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" aria-labelledby="projects-heading">
-      <Container className=" py-12">
+      <Container className="border-t border-border-soft py-12">
         <div className="mb-6 flex items-center justify-between gap-4">
           <h2
             id="projects-heading"
-            className="text-[11px] uppercase tracking-[0.1em] text-zinc-500"
+            className="text-[11px] uppercase tracking-[0.1em] text-muted"
           >
-            Projects
+            Featured Projects
           </h2>
 
           <Link
             href="/projects"
-            className="text-[12px] text-zinc-400 hover:text-zinc-100"
+            className="text-[12px] text-secondary hover:text-primary"
           >
             View all
           </Link>

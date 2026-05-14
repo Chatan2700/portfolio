@@ -43,27 +43,27 @@ export default async function LogPostPage({ params }: LogPostPageProps) {
 
   return (
     <main>
-      <Container className="border-b border-white/10 py-12">
+      <Container className="border-b border-border-soft py-12">
         <article className="max-w-[560px]">
           <Link
             href="/log"
-            className="text-[12px] text-zinc-500 hover:text-zinc-100"
+            className="text-[12px] text-muted hover:text-primary"
           >
             ← Back to DevLog
           </Link>
 
           <time
             dateTime={post.date}
-            className="mt-8 block text-[11px] text-zinc-500"
+            className="mt-8 block text-[11px] text-muted"
           >
             {post.date}
           </time>
 
-          <h1 className="mt-4 text-[18px] font-medium leading-[1.6] text-zinc-100">
+          <h1 className="mt-4 text-[18px] font-medium leading-[1.6] text-primary">
             {post.title}
           </h1>
 
-          <p className="mt-4 text-[13px] leading-[1.7] text-zinc-400">
+          <p className="mt-4 text-[13px] leading-[1.7] text-secondary">
             {post.excerpt}
           </p>
 
@@ -72,25 +72,25 @@ export default async function LogPostPage({ params }: LogPostPageProps) {
               remarkPlugins={[remarkGfm]}
               components={{
                 h2: ({ children }) => (
-                  <h2 className="mt-10 text-[15px] font-medium leading-[1.6] text-zinc-100">
+                  <h2 className="mt-10 text-[15px] font-medium leading-[1.6] text-primary">
                     {children}
                   </h2>
                 ),
 
                 h3: ({ children }) => (
-                  <h3 className="mt-8 text-[13px] uppercase tracking-[0.1em] text-zinc-500">
+                  <h3 className="mt-8 text-[13px] uppercase tracking-[0.1em] text-muted">
                     {children}
                   </h3>
                 ),
 
                 p: ({ children }) => (
-                  <p className="mt-4 text-[13px] leading-[1.8] text-zinc-400">
+                  <p className="mt-4 text-[13px] leading-[1.8] text-secondary">
                     {children}
                   </p>
                 ),
 
                 ul: ({ children }) => (
-                  <ul className="mt-4 list-disc space-y-2 pl-5 text-[13px] leading-[1.8] text-zinc-400">
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-[13px] leading-[1.8] text-secondary">
                     {children}
                   </ul>
                 ),
@@ -98,13 +98,13 @@ export default async function LogPostPage({ params }: LogPostPageProps) {
                 li: ({ children }) => <li>{children}</li>,
 
                 code: ({ children }) => (
-                  <code className="rounded border border-white/10 bg-[#111] px-1.5 py-0.5 text-[12px] text-zinc-100">
+                  <code className="rounded border border-border bg-surface px-1.5 py-0.5 text-[12px] text-primary">
                     {children}
                   </code>
                 ),
 
                 pre: ({ children }) => (
-                  <pre className="mt-4 overflow-x-auto rounded-xl border border-white/10 bg-[#111] p-4 text-[12px] leading-[1.7] text-zinc-100">
+                  <pre className="mt-4 overflow-x-auto rounded-xl border border-border bg-surface p-4 text-[12px] leading-[1.7] text-primary">
                     {children}
                   </pre>
                 ),
@@ -112,7 +112,7 @@ export default async function LogPostPage({ params }: LogPostPageProps) {
                 a: ({ href, children }) => (
                   <a
                     href={href}
-                    className="text-zinc-100 underline underline-offset-4"
+                    className="text-primary underline underline-offset-4"
                   >
                     {children}
                   </a>

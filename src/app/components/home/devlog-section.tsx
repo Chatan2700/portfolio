@@ -8,18 +8,18 @@ export function DevLogSection() {
 
   return (
     <section id="devlog" aria-labelledby="devlog-heading">
-      <Container className="py-12">
+      <Container className="border-t border-border-soft py-12">
         <div className="mb-6 flex items-center justify-between gap-4">
           <h2
             id="devlog-heading"
-            className="text-[11px] uppercase tracking-[0.1em] text-zinc-500"
+            className="text-[11px] uppercase tracking-[0.1em] text-muted"
           >
             DevLog
           </h2>
 
           <Link
             href="/log"
-            className="text-[12px] text-zinc-400 hover:text-zinc-100"
+            className="text-[12px] text-secondary hover:text-primary"
           >
             View all
           </Link>
@@ -32,7 +32,7 @@ export function DevLogSection() {
             ))}
           </div>
         ) : (
-          <p className="text-[13px] leading-[1.6] text-zinc-500">
+          <p className="text-[13px] leading-[1.6] text-muted">
             No DevLog entries yet.
           </p>
         )}

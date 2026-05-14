@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexMono.variable} bg-[#0a0a0a] text-[#f3f3f4] antialiased`}
+        className={`${ibmPlexMono.variable} bg-background text-primary antialiased`}
       >
-        <div className="flex flex-col min-h-screen border-x border-white/10 max-w-160 mx-auto">
+        <div className="flex min-h-screen max-w-160 flex-col border-x border-border-soft mx-auto">
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
