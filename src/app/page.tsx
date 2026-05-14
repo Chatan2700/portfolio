@@ -6,22 +6,16 @@ import { DevLogSection } from "./components/home/devlog-section";
 export default function HomePage() {
   const skills = [
     "TypeScript",
-    "Node.js",
-    "HTML5",
-    "CSS3",
-    "WebSockets",
-    "Electron",
-    "React Query",
     "Next.js",
+    "Node.js",
     "Tailwind CSS",
-    "Vitest",
-    "AWS (IAM, Cognito)",
-    "Git",
+    "WebSockets",
+    "AWS",
     "PostgreSQL",
-    "MySQL",
+    "Git",
+    "Docker",
+    "Electron",
     "system design",
-    "desktop application development",
-    "microservices",
   ];
 
   return (
@@ -33,9 +27,8 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-3 text-[13px] leading-[1.6] text-secondary">
-            Software Developer & Cloud Engineer focused on building full-stack
-            web applications with practical cloud, infrastructure, and systems
-            foundations.
+            Software Developer focused on full-stack web applications, cloud
+            infrastructure, and systems-oriented engineering.
           </p>
 
           <p className="mt-5 text-[13px] leading-[1.6] text-secondary">
@@ -53,6 +46,9 @@ export default function HomePage() {
                 {skill}
               </span>
             ))}
+            <Link href="/about">
+              <span className="underline hover:no-underline">Learn more↗</span>
+            </Link>
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3 text-[13px]">

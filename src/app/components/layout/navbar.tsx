@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "./container";
 
 const navItems = [
@@ -15,7 +16,13 @@ export function Navbar() {
           href="/"
           className="text-sm font-medium tracking-tight text-primary transition-opacity hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
         >
-          Sebastian Rios
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={24}
+            height={24}
+            className="mr-2"
+          />{" "}
         </Link>
 
         <nav
