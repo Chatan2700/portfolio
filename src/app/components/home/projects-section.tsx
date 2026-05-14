@@ -30,6 +30,12 @@ export function ProjectsSection() {
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
+
+        {projects.length === 0 && (
+          <p className="text-[13px] leading-[1.6] text-muted">
+            No featured projects at the moment.
+          </p>
+        )}
       </Container>
     </section>
   );

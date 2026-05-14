@@ -13,7 +13,7 @@ export const projects: Project[] = [
     featured: false,
     image: "/projects/portfolio-screenshot.png",
     imageAlt: "Dark minimal portfolio interface preview",
-    githubUrl: "https://github.com/",
+    githubUrl: "https://github.com/Chatan2700/portfolio",
     liveUrl: "",
     startedAt: "2026-04",
     sections: [
