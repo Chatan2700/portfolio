@@ -28,15 +28,3 @@ The goal of this project is to create a simple, fast, recruiter-facing website w
 - **Content:** Markdown / MDX-style files with frontmatter
 - **Deployment:** Vercel
 
-## Project Structure
-
-```txt
-src/
-  app/
-    about/
-    projects/
-    log/
-    components/
-    content/
-    lib/
-    types/
